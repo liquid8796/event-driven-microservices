@@ -16,7 +16,7 @@ public class CustomerCompositeRouter {
     public RouterFunction<ServerResponse> route(CustomerCompositeHandler customerCompositeHandler) {
         return RouterFunctions.route(RequestPredicates.GET("/api/composite/fetchCustomerSummary")
                         .and(RequestPredicates.accept(MediaType.APPLICATION_JSON))
-                        .and(RequestPredicates.queryParam("mobileNumber", )),
+                        .and(RequestPredicates.queryParam("mobileNumber", param -> true)),
                 customerCompositeHandler::fetchCustomerSummary);
     }
 }

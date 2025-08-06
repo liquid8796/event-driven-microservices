@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2dc682a1-833e-43e4-b072-231e190c9cdd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/com/eazybytes/gatewayserver/GatewayserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/eazybytes/gatewayserver/GatewayserverApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/target/classes/com/eazybytes/gatewayserver/GatewayserverApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/target/classes/com/eazybytes/gatewayserver/GatewayserverApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +170,7 @@
       <workItem from="1754356735719" duration="959000" />
       <workItem from="1754358239352" duration="394000" />
       <workItem from="1754366043179" duration="177000" />
-      <workItem from="1754443234212" duration="614000" />
+      <workItem from="1754443234212" duration="2777000" />
     </task>
     <servers />
   </component>

@@ -7,7 +7,6 @@ import org.axonframework.modelling.command.TargetAggregateIdentifier;
 @Data
 @Builder
 public class UpdateCustomerCommand {
-
     @TargetAggregateIdentifier
     private final String customerId;
     private final String name;

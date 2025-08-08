@@ -48,6 +48,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -128,7 +129,8 @@
       <option name="presentableId" value="Default" />
       <updated>1754551151456</updated>
       <workItem from="1754551152601" duration="2667000" />
-      <workItem from="1754558792764" duration="1592000" />
+      <workItem from="1754558792764" duration="2150000" />
+      <workItem from="1754616076647" duration="597000" />
     </task>
     <servers />
   </component>

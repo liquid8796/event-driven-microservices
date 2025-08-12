@@ -7,10 +7,7 @@
     <list default="true" id="fcb79f06-164d-4571-b716-f8dc565931d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../section1/01_end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../section1/01_end/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/query/FindCustomerQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/query/FindCustomerQuery.java" afterDir="false" />
->>>>>>> 7cd623bb72c689d139f7575f0cb15a2719902e5f
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

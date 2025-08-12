@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcb79f06-164d-4571-b716-f8dc565931d7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../section1/01_end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../section1/01_end/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="12fd420a-2913-4ce0-a692-897fb08f294f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/query/FindCustomerQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/query/FindCustomerQuery.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +22,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="30wur3KFacJEkLDuh8T1Eg5f8LT" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="31ByBzjvySDQHPajdjVVHSYq62N" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -35,26 +33,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Project/java/event-driven-microservices/section3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Project/java/event-driven-microservices/section3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -65,7 +60,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LoansApplication">
+  <component name="RunManager" selected="Spring Boot.CardsApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -125,43 +120,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fcb79f06-164d-4571-b716-f8dc565931d7" name="Changes" comment="" />
-      <created>1754551151456</created>
+      <changelist id="12fd420a-2913-4ce0-a692-897fb08f294f" name="Changes" comment="" />
+      <created>1755011628670</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1754551151456</updated>
-      <workItem from="1754551152601" duration="2667000" />
-      <workItem from="1754558792764" duration="2150000" />
-      <workItem from="1754616076647" duration="597000" />
-<<<<<<< HEAD
-      <workItem from="1754618995492" duration="7023000" />
-      <workItem from="1754878329989" duration="559000" />
-=======
-      <workItem from="1754618995492" duration="5731000" />
-      <workItem from="1754925676987" duration="612000" />
-      <workItem from="1754926325689" duration="2059000" />
->>>>>>> 7cd623bb72c689d139f7575f0cb15a2719902e5f
+      <updated>1755011628670</updated>
+      <workItem from="1755011629782" duration="1205000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
-    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
-    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
-    <option featureType="dependencySupport" implementationName="executable:kubectl" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
-    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
-    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
-    <option featureType="dependencySupport" implementationName="executable:docker" />
-    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
-    <option featureType="dependencySupport" implementationName="java:io.grpc:grpc-api" />
-    <option featureType="dependencySupport" implementationName="java:jakarta.ws.rs:jakarta.ws.rs-api" />
-    <option featureType="dependencySupport" implementationName="java:org.axonframework:axon-messaging" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
   </component>
 </project>

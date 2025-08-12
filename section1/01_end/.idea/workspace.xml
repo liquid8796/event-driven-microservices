@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dc682a1-833e-43e4-b072-231e190c9cdd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eazy-bom/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eazy-bom/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eazy-bom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eazy-bom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../section3/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../section3/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../section3/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../section3/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../section3/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../section3/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../section3/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../section3/cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../section3/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../section3/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../section3/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../section3/customer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../section3/eazy-bom/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../section3/eazy-bom/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../section3/eazy-bom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../section3/eazy-bom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../section3/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../section3/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../section3/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../section3/loans/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="2dc682a1-833e-43e4-b072-231e190c9cdd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,8 +140,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.27812.49" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.27812.49" />
       </set>
     </attachedChunks>
   </component>
@@ -194,6 +172,7 @@
       <workItem from="1754447901256" duration="4925000" />
       <workItem from="1754538292389" duration="4724000" />
       <workItem from="1754550902318" duration="159000" />
+      <workItem from="1754925580403" duration="87000" />
     </task>
     <servers />
   </component>

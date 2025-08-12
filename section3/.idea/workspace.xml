@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fcb79f06-164d-4571-b716-f8dc565931d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/CreateCustomerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/CreateCustomerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/DeleteCustomerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/DeleteCustomerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/UpdateCustomerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/UpdateCustomerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/controller/CustomerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +131,8 @@
       <workItem from="1754551152601" duration="2667000" />
       <workItem from="1754558792764" duration="2150000" />
       <workItem from="1754616076647" duration="597000" />
-      <workItem from="1754618995492" duration="5731000" />
+      <workItem from="1754618995492" duration="7023000" />
+      <workItem from="1754878329989" duration="559000" />
     </task>
     <servers />
   </component>

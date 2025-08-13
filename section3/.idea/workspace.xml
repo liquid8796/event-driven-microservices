@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="2e4bc53e-4e14-46a9-82ae-89b2ad4620a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="12fd420a-2913-4ce0-a692-897fb08f294f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/aggregate/CustomerAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/aggregate/CustomerAggregate.java" afterDir="false" />
+>>>>>>> 9f83fa804820bf87da737ce6e09c421a21b0fa2d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+<<<<<<< HEAD
   <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
@@ -30,6 +37,12 @@
   "associatedIndex": 1
 }]]></component>
   <component name="ProjectId" id="31AvXeWOx02HoCChdTKxLKXMHw1" />
+=======
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="31ByBzjvySDQHPajdjVVHSYq62N" />
+>>>>>>> 9f83fa804820bf87da737ce6e09c421a21b0fa2d
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -41,19 +54,29 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/os-namtlh0807962/Downloads/Github/event-driven-microservices/section3",
+=======
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Project/java/event-driven-microservices/section3",
+>>>>>>> 9f83fa804820bf87da737ce6e09c421a21b0fa2d
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
+<<<<<<< HEAD
     "to.speed.mode.migration.done": "true",
+=======
+    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
+>>>>>>> 9f83fa804820bf87da737ce6e09c421a21b0fa2d
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -67,7 +90,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LoansApplication">
+  <component name="RunManager" selected="Spring Boot.CardsApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -127,12 +150,21 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="2e4bc53e-4e14-46a9-82ae-89b2ad4620a2" name="Changes" comment="" />
       <created>1754979732683</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754979732683</updated>
       <workItem from="1754979733831" duration="3759000" />
+=======
+      <changelist id="12fd420a-2913-4ce0-a692-897fb08f294f" name="Changes" comment="" />
+      <created>1755011628670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755011628670</updated>
+      <workItem from="1755011629782" duration="2892000" />
+>>>>>>> 9f83fa804820bf87da737ce6e09c421a21b0fa2d
     </task>
     <servers />
   </component>

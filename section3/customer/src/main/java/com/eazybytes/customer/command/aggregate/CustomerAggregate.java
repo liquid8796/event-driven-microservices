@@ -46,4 +46,9 @@ public class CustomerAggregate {
         this.mobileNumber = customerCreatedEvent.getMobileNumber();
         this.activeSw = customerCreatedEvent.isActiveSw();
     }
+
+    public void handle(UpdateCustomerCommand updateCustomerCommand){
+        CustomerUpdatedEvent CustomerUpdatedEvent = new CustomerUpdatedEvent();
+        BeanUtils
+    }
 }

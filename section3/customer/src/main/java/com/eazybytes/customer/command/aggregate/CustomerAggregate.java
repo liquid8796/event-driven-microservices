@@ -1,7 +1,11 @@
 package com.eazybytes.customer.command.aggregate;
 
 import com.eazybytes.customer.command.CreateCustomerCommand;
+import com.eazybytes.customer.command.DeleteCustomerCommand;
+import com.eazybytes.customer.command.UpdateCustomerCommand;
 import com.eazybytes.customer.command.event.CustomerCreatedEvent;
+import com.eazybytes.customer.command.event.CustomerDeletedEvent;
+import com.eazybytes.customer.command.event.CustomerUpdatedEvent;
 import com.eazybytes.customer.entity.Customer;
 import com.eazybytes.customer.exception.CustomerAlreadyExistsException;
 import com.eazybytes.customer.repository.CustomerRepository;
@@ -47,8 +51,28 @@ public class CustomerAggregate {
         this.activeSw = customerCreatedEvent.isActiveSw();
     }
 
+    @CommandHandler
     public void handle(UpdateCustomerCommand updateCustomerCommand){
-        CustomerUpdatedEvent CustomerUpdatedEvent = new CustomerUpdatedEvent();
-        BeanUtils
+        CustomerUpdatedEvent customerUpdatedEvent = new CustomerUpdatedEvent();
+        BeanUtils.copyProperties(updateCustomerCommand, customerUpdatedEvent);
+        AggregateLifecycle.apply(customerUpdatedEvent);
+    }
+
+    @EventSourcingHandler
+    public void on(CustomerUpdatedEvent customerUpdatedEvent) {
+        this.name = customerUpdatedEvent.getName();
+        this.email= customerUpdatedEvent.getEmail();
+    }
+
+    @CommandHandler
+    public void handle(DeleteCustomerCommand deleteCustomerCommand) {
+        CustomerDeletedEvent customerDeletedEvent = new CustomerDeletedEvent();
+        BeanUtils.copyProperties(deleteCustomerCommand, customerDeletedEvent);
+        AggregateLifecycle.apply(customerDeletedEvent);
+    }
+
+    @EventSourcingHandler
+    public void on(CustomerDeletedEvent customerDeletedEvent) {
+        this.activeSw = customerDeletedEvent.isActiveSw();
     }
 }

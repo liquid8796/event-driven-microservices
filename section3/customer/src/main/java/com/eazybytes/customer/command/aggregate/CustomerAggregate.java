@@ -1,11 +1,5 @@
 package com.eazybytes.customer.command.aggregate;
 
-<<<<<<< HEAD
-import org.axonframework.spring.stereotype.Aggregate;
-
-@Aggregate
-public class CustomerAggregate {
-=======
 import com.eazybytes.customer.command.CreateCustomerCommand;
 import com.eazybytes.customer.command.event.CustomerCreatedEvent;
 import com.eazybytes.customer.entity.Customer;
@@ -23,14 +17,11 @@ import java.util.Optional;
 @Aggregate
 public class CustomerAggregate {
     @AggregateIdentifier
->>>>>>> 9f83fa804820bf87da737ce6e09c421a21b0fa2d
     private String customerId;
     private String name;
     private String email;
     private String mobileNumber;
     private boolean activeSw;
-<<<<<<< HEAD
-=======
 
     public CustomerAggregate() {}
 
@@ -55,5 +46,4 @@ public class CustomerAggregate {
         this.mobileNumber = customerCreatedEvent.getMobileNumber();
         this.activeSw = customerCreatedEvent.isActiveSw();
     }
->>>>>>> 9f83fa804820bf87da737ce6e09c421a21b0fa2d
 }

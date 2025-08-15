@@ -5,21 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24c6c7dd-b519-4c8a-a01a-3e091dca17ea" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/aggregate/CustomerAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/aggregate/CustomerAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/mapper/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/mapper/CustomerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/mapper/CustomerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/service/ICustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/service/ICustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/service/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/service/impl/CustomerServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="31GBtxtjvrBowMsKaG9vsjDPkfd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,8 +50,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CustomersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -51,6 +80,18 @@
         <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="CustomersApplication" value="STOPPED" />
+              <entry key="EurekaserverApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.LoansApplication">
@@ -121,6 +162,12 @@
       <workItem from="1755140748998" duration="342000" />
       <workItem from="1755142527491" duration="536000" />
       <workItem from="1755143497507" duration="121000" />
+      <workItem from="1755164195859" duration="2307000" />
+      <workItem from="1755220550636" duration="39000" />
+      <workItem from="1755220613954" duration="426000" />
+      <workItem from="1755224129160" duration="2723000" />
+      <workItem from="1755238484859" duration="44000" />
+      <workItem from="1755238839883" duration="650000" />
     </task>
     <servers />
   </component>

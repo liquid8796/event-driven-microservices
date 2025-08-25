@@ -27,7 +27,8 @@ public class CustomerAggregate {
     private String mobileNumber;
     private boolean activeSw;
 
-    public CustomerAggregate() {}
+    public CustomerAggregate() {
+    }
 
     @CommandHandler
     public CustomerAggregate(CreateCustomerCommand createCustomerCommand, CustomerRepository customerRepository) {

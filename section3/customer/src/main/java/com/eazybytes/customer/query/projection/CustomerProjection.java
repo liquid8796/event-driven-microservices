@@ -14,22 +14,22 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class CustomerProjection {
 
-    private final ICustomerService  customerService;
+    private final ICustomerService  iCustomerService;
 
     @EventHandler
-    public void on(CustomerCreatedEvent customerCreatedEvent){
+    public void on(CustomerCreatedEvent customerCreatedEvent) {
         Customer customerEntity = new Customer();
-        BeanUtils.copyProperties(customerCreatedEvent, customerEntity);
-        customerService.createCustomer(customerEntity);
+        BeanUtils.copyProperties(customerCreatedEvent,customerEntity);
+        iCustomerService.createCustomer(customerEntity);
     }
 
     @EventHandler
-    public void on(CustomerUpdatedEvent customerUpdatedEvent){
-        customerService.updateCustomer(customerUpdatedEvent);
+    public void on(CustomerUpdatedEvent customerUpdatedEvent) {
+        iCustomerService.updateCustomer(customerUpdatedEvent);
     }
 
     @EventHandler
-    public void on(CustomerDeletedEvent customerDeletedEvent){
-        customerService.deleteCustomer(customerDeletedEvent.getCustomerId());
+    public void on(CustomerDeletedEvent customerDeletedEvent) {
+        iCustomerService.deleteCustomer(customerDeletedEvent.getCustomerId());
     }
 }

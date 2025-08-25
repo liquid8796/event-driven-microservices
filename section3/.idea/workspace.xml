@@ -6,6 +6,48 @@
   <component name="ChangeListManager">
     <list default="true" id="24c6c7dd-b519-4c8a-a01a-3e091dca17ea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/DeleteCustomerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/DeleteCustomerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/UpdateCustomerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/UpdateCustomerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/aggregate/CustomerAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/aggregate/CustomerAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/controller/CustomerCommandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/controller/CustomerCommandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/event/CustomerUpdatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/command/event/CustomerUpdatedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/query/controller/CustomerQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/query/controller/CustomerQueryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/query/projection/CustomerProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/eazybytes/customer/query/projection/CustomerProjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/CustomersApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/audit/AuditAwareImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/command/CreateCustomerCommand$CreateCustomerCommandBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/command/CreateCustomerCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/command/DeleteCustomerCommand$DeleteCustomerCommandBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/command/DeleteCustomerCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/command/UpdateCustomerCommand$UpdateCustomerCommandBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/command/UpdateCustomerCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/command/aggregate/CustomerAggregate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/command/controller/CustomerCommandController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/command/event/CustomerCreatedEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/command/event/CustomerDeletedEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/command/event/CustomerUpdatedEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/constants/CustomerConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/dto/CustomerDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/dto/ResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/entity/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/entity/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/exception/CustomerAlreadyExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/mapper/CustomerMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/query/FindCustomerQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/query/controller/CustomerQueryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/query/handler/CustomerQueryHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/query/projection/CustomerProjection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/repository/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/service/ICustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/eazybytes/customer/service/impl/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/test-classes/com/eazybytes/customer/CustomerApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/target/classes/com/eazybytes/eurekaserver/EurekaserverApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/target/test-classes/com/eazybytes/eurekaserver/EurekaserverApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,32 +79,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.CustomersApplication.executor": "Run",
-    "Spring Boot.EurekaserverApplication.executor": "Run",
-    "Spring Boot.GatewayserverApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/os-namtlh0807962/Downloads/Github/event-driven-microservices/section3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CustomersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/os-namtlh0807962/Downloads/Github/event-driven-microservices/section3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -79,6 +121,7 @@
             <map>
               <entry key="CustomersApplication" value="STOPPED" />
               <entry key="EurekaserverApplication" value="STOPPED" />
+              <entry key="GatewayserverApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -160,7 +203,9 @@
       <workItem from="1755238484859" duration="44000" />
       <workItem from="1755238839883" duration="650000" />
       <workItem from="1755247681004" duration="1074000" />
-      <workItem from="1755252652242" duration="1393000" />
+      <workItem from="1755252652242" duration="1532000" />
+      <workItem from="1755480842250" duration="7000" />
+      <workItem from="1756086872892" duration="3697000" />
     </task>
     <servers />
   </component>

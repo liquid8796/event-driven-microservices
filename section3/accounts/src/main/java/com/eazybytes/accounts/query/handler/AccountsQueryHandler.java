@@ -1,6 +1,7 @@
 package com.eazybytes.accounts.query.handler;
 
 import com.eazybytes.accounts.dto.AccountsDto;
+import com.eazybytes.accounts.query.FindAccountQuery;
 import com.eazybytes.accounts.service.IAccountsService;
 import lombok.RequiredArgsConstructor;
 import org.axonframework.queryhandling.QueryHandler;

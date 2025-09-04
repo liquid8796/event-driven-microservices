@@ -10,6 +10,7 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.RequiredArgsConstructor;
 import org.axonframework.commandhandling.gateway.CommandGateway;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -30,10 +31,8 @@ public class CustomerCommandController {
         CreateCustomerCommand createCustomerCommand = CreateCustomerCommand.builder()
                 .customerId(UUID.randomUUID().toString()).email(customerDto.getEmail())
                 .name(customerDto.getName()).mobileNumber(customerDto.getMobileNumber())
-                .activeSw(customerDto.isActiveSw()).build();
-
+                .activeSw(CustomerConstants.ACTIVE_SW).build();
         commandGateway.sendAndWait(createCustomerCommand);
-
         return ResponseEntity
                 .status(org.springframework.http.HttpStatus.CREATED)
                 .body(new ResponseDto(CustomerConstants.STATUS_201, CustomerConstants.MESSAGE_201));
@@ -44,26 +43,21 @@ public class CustomerCommandController {
         UpdateCustomerCommand updateCustomerCommand = UpdateCustomerCommand.builder()
                 .customerId(customerDto.getCustomerId()).email(customerDto.getEmail())
                 .name(customerDto.getName()).mobileNumber(customerDto.getMobileNumber())
-                .activeSw(customerDto.isActiveSw()).build();
-
+                .activeSw(CustomerConstants.ACTIVE_SW).build();
         commandGateway.sendAndWait(updateCustomerCommand);
-
-        return ResponseEntity
-                .status(org.springframework.http.HttpStatus.OK)
+        return ResponseEntity.status(HttpStatus.OK)
                 .body(new ResponseDto(CustomerConstants.STATUS_200, CustomerConstants.MESSAGE_200));
     }
 
     @PatchMapping("/delete")
     public ResponseEntity<ResponseDto> deleteCustomer(@RequestParam("customerId")
-                                                      @Pattern(regexp = "(^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$)",
-                                                              message = "CustomerId is invalid") String customerId) {
+    @Pattern(regexp = "(^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$)",
+            message = "CustomerId is invalid") String customerId) {
         DeleteCustomerCommand deleteCustomerCommand = DeleteCustomerCommand.builder()
                 .customerId(customerId).activeSw(CustomerConstants.IN_ACTIVE_SW).build();
-
         commandGateway.sendAndWait(deleteCustomerCommand);
-
-        return ResponseEntity
-                .status(org.springframework.http.HttpStatus.OK)
+        return ResponseEntity.status(HttpStatus.OK)
                 .body(new ResponseDto(CustomerConstants.STATUS_200, CustomerConstants.MESSAGE_200));
     }
+
 }

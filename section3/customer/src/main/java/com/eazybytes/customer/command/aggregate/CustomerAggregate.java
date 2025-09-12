@@ -41,7 +41,7 @@ public class CustomerAggregate {
                 findByMobileNumberAndActiveSw(createCustomerCommand.getMobileNumber(), true);
         if (optionalCustomer.isPresent()) {
             throw new CustomerAlreadyExistsException("Customer already registered with given mobileNumber "
-                    + createCustomerCommand.getMobileNumber());
+                    + createCustomerCommand.getMobileNumber());e
         }*/
         CustomerCreatedEvent customerCreatedEvent = new CustomerCreatedEvent();
         BeanUtils.copyProperties(createCustomerCommand, customerCreatedEvent);

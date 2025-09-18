@@ -9,11 +9,11 @@
         <relativePath>../eazy-bom/pom.xml</relativePath>
     </parent>
     <groupId>com.eazybytes</groupId>
-    <artifactId>customer</artifactId>
+    <artifactId>profile</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>customer</name>
-    <description>Microservice for Customers</description>
+    <name>profile</name>
+    <description>Microservice for reading Profile info</description>
     <dependencies>
         <dependency>
             <groupId>com.eazybytes</groupId>

@@ -76,7 +76,7 @@ public class AccountsServiceImpl  implements IAccountsService {
         accountsRepository.save(account);
         AccountDataChangedEvent accountDataChangedEvent = new AccountDataChangedEvent();
         accountDataChangedEvent.setMobileNumber(account.getMobileNumber());
-        accountDataChangedEvent.setAccountNumber(0L);
+        accountDataChangedEvent.setAccountNumber(null);
         eventGateway.publish(accountDataChangedEvent);
         return true;
     }

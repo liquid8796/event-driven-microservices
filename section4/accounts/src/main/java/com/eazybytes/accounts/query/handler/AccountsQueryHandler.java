@@ -16,7 +16,7 @@ public class AccountsQueryHandler {
     @QueryHandler
     public AccountsDto findAccount(FindAccountQuery query) {
         AccountsDto account = iAccountsService.fetchAccount(query.getMobileNumber());
-
         return account;
     }
+
 }

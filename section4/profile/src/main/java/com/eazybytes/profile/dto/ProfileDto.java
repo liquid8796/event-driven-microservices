@@ -10,4 +10,6 @@ public class ProfileDto {
     private long accountNumber;
     private long cardNumber;
     private long loanNumber;
+
+
 }

@@ -7,4 +7,5 @@ public class CardDataChangedEvent {
 
     private String mobileNumber;
     private Long cardNumber;
+
 }

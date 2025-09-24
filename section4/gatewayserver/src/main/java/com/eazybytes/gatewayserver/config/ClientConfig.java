@@ -19,7 +19,7 @@ public class ClientConfig {
         WebClient webClient = WebClient.builder().baseUrl(baseUrl).build();
         WebClientAdapter adapter = WebClientAdapter.create(webClient);
         HttpServiceProxyFactory factory = HttpServiceProxyFactory.builderFor(adapter).build();
-
         return factory.createClient(CustomerSummaryClient.class);
     }
+
 }

@@ -4,6 +4,8 @@ import com.eazybytes.profile.dto.ProfileDto;
 import com.eazybytes.profile.entity.Profile;
 
 public class ProfileMapper {
+
+
     public static ProfileDto mapToProfileDto(Profile profile, ProfileDto profileDto) {
         profileDto.setName(profile.getName());
         profileDto.setMobileNumber(profile.getMobileNumber());
@@ -12,4 +14,5 @@ public class ProfileMapper {
         profileDto.setCardNumber(profile.getCardNumber());
         return profileDto;
     }
+
 }

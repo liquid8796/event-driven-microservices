@@ -43,5 +43,9 @@ public class GatewayserverApplication {
                         .filters(f -> f.rewritePath("/eazybank/profile/(?<segment>.*)", "/${segment}")
                                 .addResponseHeader("X-Response-Time", LocalDateTime.now().toString()))
                         .uri("lb://PROFILE")).build();
+
+
     }
+
+
 }

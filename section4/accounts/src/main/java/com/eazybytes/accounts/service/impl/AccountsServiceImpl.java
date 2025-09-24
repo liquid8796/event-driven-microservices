@@ -15,6 +15,7 @@ import org.axonframework.eventhandling.gateway.EventGateway;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
+import java.util.Random;
 
 @Service
 @AllArgsConstructor
@@ -76,8 +77,10 @@ public class AccountsServiceImpl  implements IAccountsService {
         accountsRepository.save(account);
         AccountDataChangedEvent accountDataChangedEvent = new AccountDataChangedEvent();
         accountDataChangedEvent.setMobileNumber(account.getMobileNumber());
-        accountDataChangedEvent.setAccountNumber(null);
+        accountDataChangedEvent.setAccountNumber(0L);
         eventGateway.publish(accountDataChangedEvent);
         return true;
     }
+
+
 }

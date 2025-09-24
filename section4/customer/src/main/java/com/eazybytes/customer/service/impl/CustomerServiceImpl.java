@@ -65,4 +65,5 @@ public class CustomerServiceImpl implements ICustomerService {
         eventGateway.publish(customerDataChangedEvent);
         return true;
     }
+
 }

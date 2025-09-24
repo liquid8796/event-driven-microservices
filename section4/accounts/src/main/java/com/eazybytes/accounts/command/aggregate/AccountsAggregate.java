@@ -74,4 +74,5 @@ public class AccountsAggregate {
     public void on(AccountDeletedEvent accountDeletedEvent) {
         this.activeSw = accountDeletedEvent.isActiveSw();
     }
+
 }

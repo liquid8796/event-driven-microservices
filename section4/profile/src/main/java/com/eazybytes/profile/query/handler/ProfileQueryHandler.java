@@ -17,4 +17,5 @@ public class ProfileQueryHandler {
     public ProfileDto findProfile(FindProfileQuery findProfileQuery) {
         return iProfileService.fetchProfile(findProfileQuery.getMobileNumber());
     }
+
 }

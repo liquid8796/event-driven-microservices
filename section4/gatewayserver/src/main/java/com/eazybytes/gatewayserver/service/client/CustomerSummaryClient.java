@@ -10,6 +10,7 @@ import org.springframework.web.service.annotation.GetExchange;
 import reactor.core.publisher.Mono;
 
 public interface CustomerSummaryClient {
+
     @GetExchange(value= "/eazybank/customer/api/fetch", accept = "application/json")
     Mono<ResponseEntity<CustomerDto>> fetchCustomerDetails(@RequestParam("mobileNumber") String mobileNumber);
 
@@ -21,4 +22,5 @@ public interface CustomerSummaryClient {
 
     @GetExchange(value= "/eazybank/cards/api/fetch", accept = "application/json")
     Mono<ResponseEntity<CardsDto>> fetchCardDetails(@RequestParam("mobileNumber") String mobileNumber);
+
 }

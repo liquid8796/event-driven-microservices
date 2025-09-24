@@ -23,7 +23,7 @@ public class ProfileServiceImpl implements IProfileService {
     @Override
     public void handleCustomerDataChangedEvent(CustomerDataChangedEvent customerDataChangedEvent) {
         Profile profile =profileRepository.findByMobileNumberAndActiveSw(customerDataChangedEvent.getMobileNumber(),
-                ProfileConstants.ACTIVE_SW).orElseGet(Profile::new);
+                        ProfileConstants.ACTIVE_SW).orElseGet(Profile::new);
         profile.setMobileNumber(customerDataChangedEvent.getMobileNumber());
         if (customerDataChangedEvent.getName() != null) {
             profile.setName(customerDataChangedEvent.getName());
@@ -65,7 +65,7 @@ public class ProfileServiceImpl implements IProfileService {
                 () -> new ResourceNotFoundException("Profile", "mobileNumber", mobileNumber)
         );
         ProfileDto profileDto = ProfileMapper.mapToProfileDto(profile, new ProfileDto());
-
         return profileDto;
     }
+
 }

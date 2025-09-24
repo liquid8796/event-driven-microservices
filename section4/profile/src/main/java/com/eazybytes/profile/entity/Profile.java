@@ -33,4 +33,5 @@ public class Profile extends BaseEntity {
 
     @Column(name = "loan_number")
     private long loanNumber;
+
 }

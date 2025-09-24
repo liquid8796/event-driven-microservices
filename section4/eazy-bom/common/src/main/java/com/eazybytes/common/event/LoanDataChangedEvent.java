@@ -7,4 +7,5 @@ public class LoanDataChangedEvent {
 
     private String mobileNumber;
     private Long loanNumber;
+
 }

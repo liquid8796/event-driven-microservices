@@ -7,4 +7,5 @@ public class AccountDataChangedEvent {
 
     private String mobileNumber;
     private Long accountNumber;
+
 }

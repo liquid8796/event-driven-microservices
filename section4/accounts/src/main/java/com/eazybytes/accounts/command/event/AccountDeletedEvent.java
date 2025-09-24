@@ -7,4 +7,6 @@ public class AccountDeletedEvent {
 
     private Long accountNumber;
     private boolean activeSw;
+
 }
+

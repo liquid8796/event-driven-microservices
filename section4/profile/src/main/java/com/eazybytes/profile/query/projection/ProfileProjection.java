@@ -36,4 +36,6 @@ public class ProfileProjection {
     public void on(CardDataChangedEvent customerDataChangedEvent) {
         iProfileService.handleCardDataChangedEvent(customerDataChangedEvent);
     }
+
+
 }

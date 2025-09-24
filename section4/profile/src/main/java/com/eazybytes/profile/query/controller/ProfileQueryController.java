@@ -25,11 +25,10 @@ public class ProfileQueryController {
 
     @GetMapping("/profile")
     public ResponseEntity<ProfileDto> fetchProfileDetails(@RequestParam("mobileNumber")
-        @Pattern(regexp = "(^$|[0-9]{10})", message = "Mobile number must be 10 digits")
-            String mobileNumber) {
+    @Pattern(regexp = "(^$|[0-9]{10})", message = "Mobile number must be 10 digits")
+    String mobileNumber) {
         FindProfileQuery findProfileQuery = new FindProfileQuery(mobileNumber);
         ProfileDto profileDto = queryGateway.query(findProfileQuery, ResponseTypes.instanceOf(ProfileDto.class)).join();
-
         return ResponseEntity.status(HttpStatus.OK).body(profileDto);
     }
 

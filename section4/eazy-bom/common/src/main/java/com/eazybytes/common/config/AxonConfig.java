@@ -11,9 +11,9 @@ public class AxonConfig {
     public XStream xStream() {
         XStream xStream = new XStream();
         xStream.allowTypesByWildcard(new String[] {
-                "com.eazybytes.**",
+                "com.eazybytes.**"
         });
-
         return xStream;
     }
+
 }

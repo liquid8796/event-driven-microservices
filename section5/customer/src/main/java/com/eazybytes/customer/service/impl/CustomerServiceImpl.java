@@ -10,15 +10,20 @@ import com.eazybytes.customer.mapper.CustomerMapper;
 import com.eazybytes.customer.repository.CustomerRepository;
 import com.eazybytes.customer.service.ICustomerService;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
 @Service
 @AllArgsConstructor
+@Slf4j
 public class CustomerServiceImpl implements ICustomerService {
 
-    private CustomerRepository customerRepository;
+    private final CustomerRepository customerRepository;
+    private final StreamBridge streamBridge;
 
     @Override
     public void createCustomer(CustomerDto customerDto) {
@@ -62,8 +67,22 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
+    @Transactional
     public boolean updateMobileNumber(MobileNumberUpdateDto mobileNumberUpdateDto) {
-        return false;
+        String currentMobileNum = mobileNumberUpdateDto.getCurrentMobileNumber();
+        Customer customer = customerRepository.findByMobileNumberAndActiveSw(currentMobileNum,
+                true).orElseThrow(() -> new ResourceNotFoundException("Customer", "mobileNumber", currentMobileNum)
+        );
+        customer.setMobileNumber(mobileNumberUpdateDto.getNewMobileNumber());
+        customerRepository.save(customer);
+        // throw new RuntimeException("Some error occurred while updating mobileNumber");
+        updateAccountMobileNumber(mobileNumberUpdateDto);
+        return true;
     }
 
+    private void updateAccountMobileNumber(MobileNumberUpdateDto mobileNumberUpdateDto) {
+        log.info("Sending updateAccountMobileNumber request for the details: {}", mobileNumberUpdateDto);
+        var result = streamBridge.send("updateAccountMobileNumber-out-0",mobileNumberUpdateDto);
+        log.info("Is the updateAccountMobileNumber request successfully triggered ? : {}", result);
+    }
 }

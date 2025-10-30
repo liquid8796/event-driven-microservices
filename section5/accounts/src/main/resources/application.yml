@@ -24,7 +24,7 @@ spring:
     connection-timeout: 10s
   cloud:
     function:
-      definition: updateMobileNumberStatus
+      definition: updateAccountMobileNumber
     stream:
       bindings:
         updateAccountMobileNumber-in-0:

@@ -3,6 +3,7 @@ package com.eazybytes.accounts.function;
 import com.eazybytes.accounts.service.IAccountsService;
 import com.eazybytes.common.dto.MobileNumberUpdateDto;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.function.Consumer;
@@ -11,9 +12,11 @@ import java.util.function.Consumer;
 @Slf4j
 public class AccountFunctions {
 
+    @Bean
     public Consumer<MobileNumberUpdateDto> updateAccountMobileNumber(IAccountsService iAccountsService) {
         return (mobileNumberUpdateDto) -> {
-            System.out.println("updateAccountMobileNumber");
+            log.info("Received  updateAccountMobileNumber request  for the details: {}", mobileNumberUpdateDto);
+            iAccountsService.updateMobileNumber(mobileNumberUpdateDto);
         };
     }
 }

@@ -108,12 +108,12 @@ public class LoansServiceImpl implements ILoansService {
             );
             loans.setMobileNumber(mobileNumberUpdateDto.getNewMobileNumber());
             loansRepository.save(loans);
-            // throw new RuntimeException("Some error occurred while updating mobileNumber");
+//             throw new RuntimeException("Some error occurred while updating mobileNumber");
             updateMobileNumberStatus(mobileNumberUpdateDto);
         } catch (Exception exception) {
             log.error("Error occurred while updating mobile number", exception);
-//            TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
-//            rollbackCardMobileNumber(mobileNumberUpdateDto);
+            TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
+            rollbackCardMobileNumber(mobileNumberUpdateDto);
         }
         return result;
     }
@@ -122,5 +122,11 @@ public class LoansServiceImpl implements ILoansService {
         log.info("Sending updateMobileNumberStatus request for the details: {}", mobileNumberUpdateDto);
         var result = streamBridge.send("updateMobileNumberStatus-out-0", mobileNumberUpdateDto);
         log.info("Is the updateMobileNumberStatus request successfully triggered ? : {}", result);
+    }
+
+    private void rollbackCardMobileNumber(MobileNumberUpdateDto mobileNumberUpdateDto) {
+        log.info("Sending rollbackCardMobileNumber request for the details: {}", mobileNumberUpdateDto);
+        var result = streamBridge.send("rollbackCardMobileNumber-out-0",mobileNumberUpdateDto);
+        log.info("Is the rollbackCardMobileNumber request successfully triggered ? : {}", result);
     }
 }

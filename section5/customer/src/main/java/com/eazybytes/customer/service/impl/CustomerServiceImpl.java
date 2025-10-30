@@ -75,7 +75,7 @@ public class CustomerServiceImpl implements ICustomerService {
         );
         customer.setMobileNumber(mobileNumberUpdateDto.getNewMobileNumber());
         customerRepository.save(customer);
-        // throw new RuntimeException("Some error occurred while updating mobileNumber");
+//         throw new RuntimeException("Some error occurred while updating mobileNumber");
         updateAccountMobileNumber(mobileNumberUpdateDto);
         return true;
     }
@@ -84,5 +84,16 @@ public class CustomerServiceImpl implements ICustomerService {
         log.info("Sending updateAccountMobileNumber request for the details: {}", mobileNumberUpdateDto);
         var result = streamBridge.send("updateAccountMobileNumber-out-0",mobileNumberUpdateDto);
         log.info("Is the updateAccountMobileNumber request successfully triggered ? : {}", result);
+    }
+
+    @Override
+    public boolean rollbackMobileNumber(MobileNumberUpdateDto mobileNumberUpdateDto) {
+        String newMobileNumber = mobileNumberUpdateDto.getNewMobileNumber();
+        Customer customer = customerRepository.findByMobileNumberAndActiveSw(newMobileNumber,
+                true).orElseThrow(() -> new ResourceNotFoundException("Customer", "mobileNumber", newMobileNumber)
+        );
+        customer.setMobileNumber(mobileNumberUpdateDto.getCurrentMobileNumber());
+        customerRepository.save(customer);
+        return true;
     }
 }

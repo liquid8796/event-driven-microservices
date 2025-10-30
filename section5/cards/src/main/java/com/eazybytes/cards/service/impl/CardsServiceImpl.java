@@ -111,8 +111,8 @@ public class CardsServiceImpl implements ICardsService {
             updateLoanMobileNumber(mobileNumberUpdateDto);
         }catch (Exception exception) {
             log.error("Error occurred while updating mobile number", exception);
-//            TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
-//            rollbackAccountMobileNumber(mobileNumberUpdateDto);
+            TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
+            rollbackAccountMobileNumber(mobileNumberUpdateDto);
         }
         return result;
     }
@@ -121,5 +121,23 @@ public class CardsServiceImpl implements ICardsService {
         log.info("Sending updateLoanMobileNumber request for the details: {}", mobileNumberUpdateDto);
         var result = streamBridge.send("updateLoanMobileNumber-out-0",mobileNumberUpdateDto);
         log.info("Is the updateLoanMobileNumber request successfully triggered ? : {}", result);
+    }
+
+    private void rollbackAccountMobileNumber(MobileNumberUpdateDto mobileNumberUpdateDto) {
+        log.info("Sending rollbackAccountMobileNumber request for the details: {}", mobileNumberUpdateDto);
+        var result = streamBridge.send("rollbackAccountMobileNumber-out-0",mobileNumberUpdateDto);
+        log.info("Is the rollbackAccountMobileNumber request successfully triggered ? : {}", result);
+    }
+
+    @Override
+    public boolean rollbackMobileNumber(MobileNumberUpdateDto mobileNumberUpdateDto) {
+        String newMobileNumber = mobileNumberUpdateDto.getNewMobileNumber();
+        Cards cards = cardsRepository.findByMobileNumberAndActiveSw(newMobileNumber,
+                true).orElseThrow(() -> new ResourceNotFoundException("Customer", "mobileNumber", newMobileNumber)
+        );
+        cards.setMobileNumber(mobileNumberUpdateDto.getCurrentMobileNumber());
+        cardsRepository.save(cards);
+        rollbackAccountMobileNumber(mobileNumberUpdateDto);
+        return true;
     }
 }

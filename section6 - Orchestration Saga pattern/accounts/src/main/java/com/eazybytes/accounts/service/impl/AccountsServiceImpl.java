@@ -13,6 +13,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
+import java.util.Random;
 
 @Service
 @AllArgsConstructor
@@ -41,7 +42,7 @@ public class AccountsServiceImpl  implements IAccountsService {
     public AccountsDto fetchAccount(String mobileNumber) {
         Accounts account = accountsRepository.findByMobileNumberAndActiveSw(mobileNumber, AccountsConstants.ACTIVE_SW)
                 .orElseThrow(() -> new ResourceNotFoundException("Account", "mobileNumber", mobileNumber)
-        );
+                );
         AccountsDto accountsDto = AccountsMapper.mapToAccountsDto(account, new AccountsDto());
         return accountsDto;
     }
@@ -73,4 +74,15 @@ public class AccountsServiceImpl  implements IAccountsService {
         accountsRepository.save(account);
         return true;
     }
+
+    @Override
+    public boolean updateMobileNumber(String oldMobileNumber, String newMobileNumber) {
+        Accounts account = accountsRepository.findByMobileNumberAndActiveSw(oldMobileNumber,
+                AccountsConstants.ACTIVE_SW).orElseThrow(() -> new ResourceNotFoundException("Account", "mobileNumber", oldMobileNumber));
+        account.setMobileNumber(newMobileNumber);
+        accountsRepository.save(account);
+        return true;
+    }
+
+
 }

@@ -6,6 +6,10 @@ import com.eazybytes.cards.command.UpdateCardCommand;
 import com.eazybytes.cards.command.event.CardCreatedEvent;
 import com.eazybytes.cards.command.event.CardDeletedEvent;
 import com.eazybytes.cards.command.event.CardUpdatedEvent;
+import com.eazybytes.common.command.RollbackCardMobNumCommand;
+import com.eazybytes.common.command.UpdateCardMobileNumCommand;
+import com.eazybytes.common.event.CardMobNumRollbackedEvent;
+import com.eazybytes.common.event.CardMobileNumUpdatedEvent;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
@@ -24,6 +28,7 @@ public class CardAggregate {
     private int amountUsed;
     private int availableAmount;
     private boolean activeSw;
+    private String errorMsg;
 
     public CardAggregate() {
     }
@@ -71,6 +76,31 @@ public class CardAggregate {
     @EventSourcingHandler
     public void on(CardDeletedEvent cardDeletedEvent) {
         this.activeSw = cardDeletedEvent.isActiveSw();
+    }
+
+    @CommandHandler
+    public void handle(UpdateCardMobileNumCommand updateCardMobileNumCommand) {
+        CardMobileNumUpdatedEvent cardMobileNumUpdatedEvent = new CardMobileNumUpdatedEvent();
+        BeanUtils.copyProperties(updateCardMobileNumCommand, cardMobileNumUpdatedEvent);
+        AggregateLifecycle.apply(cardMobileNumUpdatedEvent);
+    }
+
+    @EventSourcingHandler
+    public void on(CardMobileNumUpdatedEvent cardMobileNumUpdatedEvent) {
+        this.mobileNumber = cardMobileNumUpdatedEvent.getNewMobileNumber();
+    }
+
+    @CommandHandler
+    public void handle(RollbackCardMobNumCommand rollbackCardMobNumCommand) {
+        CardMobNumRollbackedEvent cardMobNumRollbackedEvent = new CardMobNumRollbackedEvent();
+        BeanUtils.copyProperties(rollbackCardMobNumCommand, cardMobNumRollbackedEvent);
+        AggregateLifecycle.apply(cardMobNumRollbackedEvent);
+    }
+
+    @EventSourcingHandler
+    public void on(CardMobNumRollbackedEvent cardMobNumRollbackedEvent) {
+        this.mobileNumber = cardMobNumRollbackedEvent.getMobileNumber();
+        this.errorMsg = cardMobNumRollbackedEvent.getErrorMsg();
     }
 
 }

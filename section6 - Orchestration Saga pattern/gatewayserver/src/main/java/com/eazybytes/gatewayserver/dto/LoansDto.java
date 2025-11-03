@@ -8,6 +8,7 @@ import lombok.Data;
 
 @Data
 public class LoansDto {
+
     @NotEmpty(message = "Mobile Number can not be a null or empty")
     @Pattern(regexp = "(^$|[0-9]{10})", message = "Mobile Number must be 10 digits")
     private String mobileNumber;
@@ -29,4 +30,6 @@ public class LoansDto {
     private int outstandingAmount;
 
     private boolean activeSw;
+
+
 }

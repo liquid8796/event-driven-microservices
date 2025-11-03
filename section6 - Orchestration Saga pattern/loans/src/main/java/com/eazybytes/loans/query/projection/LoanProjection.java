@@ -1,5 +1,7 @@
 package com.eazybytes.loans.query.projection;
 
+import com.eazybytes.common.event.CardMobileNumUpdatedEvent;
+import com.eazybytes.common.event.LoanMobileNumUpdatedEvent;
 import com.eazybytes.loans.command.event.LoanCreatedEvent;
 import com.eazybytes.loans.command.event.LoanDeletedEvent;
 import com.eazybytes.loans.command.event.LoanUpdatedEvent;
@@ -33,6 +35,11 @@ public class LoanProjection {
     @EventHandler
     public void on(LoanDeletedEvent event) {
         iLoansService.deleteLoan(event.getLoanNumber());
+    }
+
+    @EventHandler
+    public void on(LoanMobileNumUpdatedEvent event) {
+        iLoansService.updateMobileNumber(event.getMobileNumber(), event.getNewMobileNumber());
     }
 
 }

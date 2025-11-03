@@ -1,5 +1,7 @@
 package com.eazybytes.customer.query.projection;
 
+import com.eazybytes.common.event.CusMobNumRollbackedEvent;
+import com.eazybytes.common.event.CusMobNumUpdatedEvent;
 import com.eazybytes.customer.command.event.CustomerCreatedEvent;
 import com.eazybytes.customer.command.event.CustomerDeletedEvent;
 import com.eazybytes.customer.command.event.CustomerUpdatedEvent;
@@ -27,13 +29,22 @@ public class CustomerProjection {
 
     @EventHandler
     public void on(CustomerUpdatedEvent customerUpdatedEvent) {
-        // throw new RuntimeException("It is a bad day!!");
         iCustomerService.updateCustomer(customerUpdatedEvent);
     }
 
     @EventHandler
     public void on(CustomerDeletedEvent customerDeletedEvent) {
         iCustomerService.deleteCustomer(customerDeletedEvent.getCustomerId());
+    }
+
+    @EventHandler
+    public void on(CusMobNumUpdatedEvent cusMobNumUpdatedEvent) {
+        iCustomerService.updateMobileNumber(cusMobNumUpdatedEvent.getMobileNumber(), cusMobNumUpdatedEvent.getNewMobileNumber());
+    }
+
+    @EventHandler
+    public void on(CusMobNumRollbackedEvent cusMobNumRollbackedEvent) {
+        iCustomerService.updateMobileNumber(cusMobNumRollbackedEvent.getNewMobileNumber(), cusMobNumRollbackedEvent.getMobileNumber());
     }
 
 }

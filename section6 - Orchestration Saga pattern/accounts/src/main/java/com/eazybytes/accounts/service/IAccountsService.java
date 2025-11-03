@@ -32,4 +32,12 @@ public interface IAccountsService {
      * @return boolean indicating if the delete of Account details is successful or not
      */
     boolean deleteAccount(Long accountNumber);
+
+    /**
+     * @param oldMobileNumber - Old mobile number of Account
+     *  @param newMobileNumber - New mobile number of Account
+     * @return boolean indicating if the update of mobile number is successful or not
+     */
+    boolean updateMobileNumber(String oldMobileNumber, String newMobileNumber);
+
 }

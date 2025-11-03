@@ -15,4 +15,5 @@ public class UpdateCusMobNumCommand {
     private final Long cardNumber;
     private final String mobileNumber;
     private final String newMobileNumber;
+
 }

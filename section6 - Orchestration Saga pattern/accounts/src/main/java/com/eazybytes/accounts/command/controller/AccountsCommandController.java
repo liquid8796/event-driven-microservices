@@ -6,6 +6,7 @@ import com.eazybytes.accounts.command.UpdateAccountCommand;
 import com.eazybytes.accounts.constants.AccountsConstants;
 import com.eazybytes.accounts.dto.AccountsDto;
 import com.eazybytes.accounts.dto.ResponseDto;
+import com.eazybytes.accounts.service.IAccountsService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.RequiredArgsConstructor;
@@ -23,11 +24,12 @@ import java.util.Random;
 @Validated
 @RequiredArgsConstructor
 public class AccountsCommandController {
+
     private final CommandGateway commandGateway;
 
     @PostMapping("/create")
     public ResponseEntity<ResponseDto> createAccount(@RequestParam("mobileNumber")
-                                                     @Pattern(regexp = "(^$|[0-9]{10})", message = "Mobile number must be 10 digits") String mobileNumber) {
+    @Pattern(regexp = "(^$|[0-9]{10})", message = "Mobile number must be 10 digits") String mobileNumber) {
         long randomAccNumber = 1000000000L + new Random().nextInt(900000000);
         CreateAccountCommand createCommand = CreateAccountCommand.builder()
                 .accountNumber(randomAccNumber).mobileNumber(mobileNumber)
@@ -60,4 +62,5 @@ public class AccountsCommandController {
                 .status(org.springframework.http.HttpStatus.OK)
                 .body(new ResponseDto(AccountsConstants.STATUS_200, AccountsConstants.MESSAGE_200));
     }
+
 }

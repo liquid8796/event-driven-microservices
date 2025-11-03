@@ -74,5 +74,14 @@ public class LoansServiceImpl implements ILoansService {
         return true;
     }
 
+    @Override
+    public boolean updateMobileNumber(String oldMobileNumber, String newMobileNumber) {
+        Loans loans = loansRepository.findByMobileNumberAndActiveSw(oldMobileNumber,
+                LoansConstants.ACTIVE_SW).orElseThrow(() -> new ResourceNotFoundException("Loan", "mobileNumber", oldMobileNumber));
+        loans.setMobileNumber(newMobileNumber);
+        loansRepository.save(loans);
+        return true;
+    }
+
 
 }

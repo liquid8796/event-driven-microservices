@@ -26,4 +26,5 @@ public class AccountsMapper {
         account.setBranchAddress(event.getBranchAddress());
         return account;
     }
+
 }

@@ -28,4 +28,11 @@ public interface ICustomerService {
      * @return boolean indicating if the delete of Customer details is successful or not
      */
     boolean deleteCustomer(String customerId);
+
+    /**
+     * @param oldMobileNumber - Old mobile number of Customer
+     *  @param newMobileNumber - New mobile number of Customer
+     * @return boolean indicating if the update of mobile number is successful or not
+     */
+    boolean updateMobileNumber(String oldMobileNumber, String newMobileNumber);
 }

@@ -6,14 +6,12 @@ import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
 @Data
 @Builder
-public class UpdateCardMobileNumCommand {
+public class RollbackCusMobNumCommand {
 
     @TargetAggregateIdentifier
-    private final Long cardNumber;
-    private final Long accountNumber;
-    private final Long loanNumber;
+    private final String customerId;
     private final String mobileNumber;
     private final String newMobileNumber;
-    private final String customerId;
+    private final String errorMsg;
 
 }

@@ -15,4 +15,5 @@ public class UpdateAccntMobileNumCommand {
     private final String mobileNumber;
     private final String newMobileNumber;
     private final String customerId;
+
 }

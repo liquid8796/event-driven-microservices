@@ -1,5 +1,6 @@
 package com.eazybytes.common.command;
 
+
 import lombok.Builder;
 import lombok.Data;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
@@ -15,4 +16,7 @@ public class UpdateLoanMobileNumCommand {
     private final String mobileNumber;
     private final String newMobileNumber;
     private final String customerId;
+
+
 }
+

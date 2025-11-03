@@ -1,5 +1,7 @@
 package com.eazybytes.loans.command.aggregate;
 
+import com.eazybytes.common.command.UpdateLoanMobileNumCommand;
+import com.eazybytes.common.event.LoanMobileNumUpdatedEvent;
 import com.eazybytes.loans.command.CreateLoanCommand;
 import com.eazybytes.loans.command.DeleteLoanCommand;
 import com.eazybytes.loans.command.UpdateLoanCommand;
@@ -77,6 +79,19 @@ public class LoanAggregate {
     @EventSourcingHandler
     public void on(LoanDeletedEvent loanDeletedEvent) {
         this.activeSw = loanDeletedEvent.isActiveSw();
+    }
+
+    @CommandHandler
+    public void handle(UpdateLoanMobileNumCommand updateLoanMobileNumCommand) {
+        LoanMobileNumUpdatedEvent loanMobileNumUpdatedEvent = new LoanMobileNumUpdatedEvent();
+        BeanUtils.copyProperties(updateLoanMobileNumCommand, loanMobileNumUpdatedEvent);
+        AggregateLifecycle.apply(loanMobileNumUpdatedEvent);
+        // throw new RuntimeException("An error occurred in loans service while processing UpdateLoanMobileNumCommand");
+    }
+
+    @EventSourcingHandler
+    public void on(LoanMobileNumUpdatedEvent loanMobileNumUpdatedEvent) {
+        this.mobileNumber = loanMobileNumUpdatedEvent.getNewMobileNumber();
     }
 
 }

@@ -5,7 +5,6 @@ import com.eazybytes.common.event.*;
 import com.eazybytes.customer.constants.CustomerConstants;
 import com.eazybytes.customer.dto.ResponseDto;
 import com.eazybytes.customer.query.FindCustomerQuery;
-import com.eazybytes.customer.query.FindUpdateMobileSagaQuery;
 import lombok.extern.slf4j.Slf4j;
 import org.axonframework.commandhandling.CommandCallback;
 import org.axonframework.commandhandling.CommandMessage;

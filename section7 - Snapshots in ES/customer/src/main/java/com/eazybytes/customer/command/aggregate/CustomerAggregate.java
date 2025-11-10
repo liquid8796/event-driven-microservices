@@ -15,7 +15,7 @@ import org.axonframework.modelling.command.AggregateLifecycle;
 import org.axonframework.spring.stereotype.Aggregate;
 import org.springframework.beans.BeanUtils;
 
-@Aggregate
+@Aggregate(snapshotTriggerDefinition = "customerSnapshotTrigger")
 public class CustomerAggregate {
 
     @AggregateIdentifier
